@@ -3,7 +3,7 @@ const messageButtons = document.querySelectorAll('.btnClasses');
 var oldMessages = document.getElementById("idNamesAndFindValue");
 var automatedMessage =  document.getElementById("idName");
 const sendButtons = document.querySelectorAll('.btnClasses');
-var nameOfTheProspect = document.getElementById("idOfNameNode").nodeValue;
+var nameOfTheProspect = document.getElementById("idOfNameNode").textContent;
 
 //Initilize loop that will send messages to 50 users.
 for (nthUser = 50; messageButtons.length && sendButtons.length <= nthUser; )
@@ -13,7 +13,7 @@ for (nthUser = 50; messageButtons.length && sendButtons.length <= nthUser; )
         //Check if user has replied to our message if not then send, else don't send.
         if (!oldMessages.length)
         {
-            automatedMessage.nodeValue = `Message String With ${nameOfProspect}`
+            automatedMessage.value = `Message String With ${nameOfProspect}`
         }
 
         else

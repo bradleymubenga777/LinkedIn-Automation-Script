@@ -2,7 +2,7 @@
 const connectButtons = document.querySelectorAll('.buttonClassNames');
 const inviteMessage = document.getElementById("inputId");
 const inviteButtons = document.querySelectorAll('.buttonClassNames');
-var nameOfTheProspect = document.getElementById("idOfNameNode").nodeValue;
+var nameOfTheProspect = document.getElementById("idOfNameNode").textContent;
 
 //A loop that will run as long as users are less than and equal to 50.
 for (nthUser = 50;  connectButtons.length <= nthUser;)
@@ -11,7 +11,7 @@ for (nthUser = 50;  connectButtons.length <= nthUser;)
     connectButtons.click()
     .then((success) => {
         //Wait till button clicks then set the input value value to the string.
-        inviteMessage.nodeValue = `Invite Message Text With ${nameOfTheProspect}`;
+        inviteMessage.value = `Invite Message Text With ${nameOfTheProspect}`;
         success = "Input Value Was Set Successfuly"
         console.log(success);
     })
