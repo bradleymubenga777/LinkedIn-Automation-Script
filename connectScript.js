@@ -1,35 +1,35 @@
 //Storing components and values in variables.
-const connectButton = document.querySelectorAll('.buttonClassNames');
+const connectButtons = document.querySelectorAll('.buttonClassNames');
 const inviteMessage = document.getElementById("inputId");
-const inviteButton = document.querySelectorAll('.buttonClassNames');
+const inviteButtons = document.querySelectorAll('.buttonClassNames');
 var nameOfTheProspect = document.getElementById("idOfNameNode").nodeValue;
 
 //A loop that will run as long as users are less than and equal to 50.
-for (nthButton = 50;  connectButton.length <= nthButton;)
+for (nthUser = 50;  connectButtons.length <= nthUser;)
 {
     //Click The Conncection Button.
-    connectButton.click()
+    connectButtons.click()
     .then((success) => {
         //Wait till button clicks then set the input value value to the string.
-        inviteMessage.nodeValue = `String Text With ${nameOfTheProspect}`;
+        inviteMessage.nodeValue = `Invite Message Text With ${nameOfTheProspect}`;
         success = "Input Value Was Set Successfuly"
         console.log(success);
     })
     .catch((err) => {
-        err = "could not send set the value"
+        err = "ERROR 111: could not send set the value"
         console.log(err);
     })
 
     //Check if input value was set successfuly then press the invite button.
     if (inviteMessage.length)
     {
-        inviteButton.click();
+        inviteButtons.click();
         console.log("Invites sent successfuly!");
     }
 
     else 
     {
-        console.log("could not send invites.")
+        console.log("ERROR 222: could not send invites.");
     }
 
 };
