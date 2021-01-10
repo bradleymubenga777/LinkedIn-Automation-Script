@@ -6,7 +6,7 @@ let sendInviteButton = document.querySelectorAll('.buttonClassNames');
 var nameOfTheProspect = document.getElementsByTagName('strong');
 var nameOfClient = nameOfTheProspect[0];
 
-//A loop that will run as long as users are less than and equal to 50.
+
 for (i = 0;  connectButton.length <= i; i++)
 {
     userBtn = connectButtons[i];
