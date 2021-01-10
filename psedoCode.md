@@ -12,7 +12,7 @@ Make sure you test each step you make.
     - Check if the input was set successfuly and then...
     - Add a click function to the 'conncet' button that sends the invite.
 
-## Automated Messages Script
+## Automated Messages Script (Use This Version First)
 - 1. Store all components and values that you will be using in individual variables (e.g the button, text input, name of the prospect)
 
 - 2. Initilize a for loop that runs as long as the total number of buttons is less than 50 [ for (buttonName.length < nthUser) {} ]
@@ -24,7 +24,7 @@ Make sure you test each step you make.
 
 - 4. Stop the automation by closing the message component.
 
-## Automated Follow Up Message (Still In Testing)
+## Automated Follow Up Message (This Is The Upated Version Of The Above Psedo Code)
 - 1. Store all components and values that you will be using in individual variables (e.g the button, text input, name of the prospect)
 
 - 2. Initilize a for loop that runs as long as the total number of buttons is less than 50 [ for (buttonName.length <= nthUser) {} ]
